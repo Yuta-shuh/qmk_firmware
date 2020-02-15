@@ -1,3 +1,9 @@
+すげー勢いで忘れたのでメモって置く
+
+コンパイルするときは ```/keyboard/ergodox_ez``` にて ```make KEYMAP=shuh``` を行う。
+
+----
+
 [![Build Status](https://travis-ci.org/jackhumbert/qmk_firmware.svg?branch=master)](https://travis-ci.org/jackhumbert/qmk_firmware)
 # Quantum Mechanical Keyboard Firmware
 

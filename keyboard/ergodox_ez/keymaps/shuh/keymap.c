@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| Hyper|           |   B  |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |¥ _ / S |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Grv/L1|   "  | ESC  | LGui |Gr/ALT|                                       |   [  |   ]  |   |  |   ¥  | ~L1  |
+ *   |Grv/L1|   "  | ESC  | LGui |⌘/英数 |                                       |⌥/かな |  [  |   ]  |   |  |   ¥  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,--------------.
  *                                        | App  |ESC   |       | LEFT | RIGHT  |
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   KC_ENT,
         KC_LCTL,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   ALL_T(KC_NO),
-        LT(SYMB,KC_GRV),S(KC_2),      KC_ESC, KC_LGUI,ALT_T(KC_GRV),
+        LT(SYMB,KC_GRV),S(KC_2),      KC_ESC, KC_LGUI, GUI_T(KC_LANG2),
                                                     KC_APP,   KC_ESC,
                                                               KC_ENT,
                                    LT(LEFT,KC_SPC), KC_BSPC,  KC_DEL,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TG(SYMB),    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             JA_AT,
                      KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,          CTL_T(JA_CLON),
         KC_B,        KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          SFT_T(JA_ENUN),
-                             JA_LBRC,JA_RBRC,S(JA_ENVL),JA_ENVL,       LT(SYMB, KC_NO),
+                             ALT_T(KC_LANG1), JA_LBRC, JA_RBRC, S(JA_ENVL), JA_ENVL,
              KC_LEFT,        KC_RGHT,
              KC_UP,
              KC_DOWN,LT(SYMB, KC_BSPC), LT(META, KC_ENT)
